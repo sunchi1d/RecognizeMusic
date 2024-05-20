@@ -9,6 +9,7 @@
 通过音频文件或者录音获取音纹audioFP,再通过使用 https://cors-anywhere.herokuapp.com/ 绕过cors限制对网易云官方pi发出请求（访问可用度受限）
 
 ### 网易云api
+该api的nodejs版本可以通过时长和音纹请求到歌曲信息
 
 可以使用网易云api,由于作者已经不再更新维护，见[https://github.com/Binaryify/NeteaseCloudMusicApi]()
 
@@ -55,6 +56,9 @@ fetch(
 如图所示，搜索成功！！
 
 ### 项目说明
+本项目通过css水波纹模拟了网易云音乐听歌识曲的功能
+
+由于只找到基于js的生成音频指纹方法所以想在安卓上利用webview实现会更便捷，但是在生活实际上这样的方法并不科学，会浪费系统资源，我还在寻炸新的方法。
 
 webview作为在安卓开发中常见的开发工具，可以减少开发成本，本项目是一个学习安卓和html5跨平台开发的一个demo，已经应用到本人的音乐软件MusicPro中，使用javascript和安卓进行交互，实现了点击搜索结果在安卓软件应用中播放识别到的歌曲，感兴趣的话可以看一下我的另一个项目 [https://github.com/sunchi1d/MusicPro]()
 
