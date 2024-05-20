@@ -2,13 +2,20 @@
 
 ### 注意事项
 
-因为html里调用的js方法用到了WEB AUDIO API的AudioWorkletProcessor，这个需要chrome66版本以上以及webview版本不能过低
+因为html里调用的js方法用到了WEB AUDIO API的AudioWorkletProcessor，这个需要chrome66版本以上以及webview版本不能过低。
+
+由于安全问题，安卓在新版本中禁用了html里的file组件，在webview中点击file会读取不到sdcard，本人在项目中重写了onActivityResult和onShowFileChooser实现了可以从file里读取aduio到html的audio组件中，让音频可以正常播放。
+
+因为需要录音和读卡，注意配置相关权限，项目中重写了onPermissionRequest，点开项目会弹出是否打开权限的消息框。
+
+需要在xml里配置network-security-config的cleartextTrafficPermitted=true否则GET请求会失败。
 
 如果使用android studio AVD请自行更新chrome版本以及webview版本，在google play商代中搜索然后update就行，没有就自行下载（登录谷歌需要VPN，需要的朋友可以联系我）
 
 通过音频文件或者录音获取音纹audioFP,再通过使用 https://cors-anywhere.herokuapp.com/ 绕过cors限制对网易云官方pi发出请求（访问可用度受限）
 
 ### 网易云api
+
 该api的nodejs版本可以通过时长和音纹请求到歌曲信息
 
 可以使用网易云api,由于作者已经不再更新维护，见[https://github.com/Binaryify/NeteaseCloudMusicApi]()
@@ -56,6 +63,7 @@ fetch(
 如图所示，搜索成功！！
 
 ### 项目说明
+
 本项目通过css水波纹模拟了网易云音乐听歌识曲的功能
 
 由于只找到基于js的生成音频指纹方法所以想在安卓上利用webview实现会更便捷，但是在生活实际上这样的方法并不科学，会浪费系统资源，我还在寻炸新的方法。
