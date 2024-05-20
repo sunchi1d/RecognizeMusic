@@ -44,13 +44,13 @@ fetch(
 
 ### 使用效果
 
-![Screenshot_20240520_142513](G:\github\image\Screenshot_20240520_142513.png)
+![Screenshot_20240520_142513](Screenshot_20240520_142513.png)
 
 如图所示则是应用成功，否则请按上面所说检查配置
 
 结果显示
 
-![Screenshot_20240520_142514](G:\github\image\Screenshot_20240520_142514.png)
+![Screenshot_20240520_142514](Screenshot_20240520_142514.png)
 
 如图所示，搜索成功！！
 
