@@ -2,7 +2,7 @@
 
 ### 注意事项
 
-因为html里调用的js方法用到了WEB AUDIO API的AudioWorkletProcessor，这个需要chrome66版本以上以及webview版本要新
+因为html里调用的js方法用到了WEB AUDIO API的AudioWorkletProcessor，这个需要chrome66版本以上以及webview版本不能过低
 
 如果使用android studio AVD请自行更新chrome版本以及webview版本，在google play商代中搜索然后update就行，没有就自行下载（登录谷歌需要VPN，需要的朋友可以联系我）
 
