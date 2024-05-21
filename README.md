@@ -14,6 +14,8 @@
 
 通过音频文件或者录音获取音纹audioFP,再通过使用 https://cors-anywhere.herokuapp.com/ 绕过cors限制对网易云官方pi发出请求（访问可用度受限）
 
+项目里已经开启了Chrome开发者工具，可以进入[chrome://inspect/#devices]()进行调试，祝你好运！
+
 如果想了解webview和js交互以达到在安卓中调用js方法或者在js中调用安卓方法的话（如在html5里点击按钮在安卓中实现页面跳转，数据传输等）可以看我另一个项目，已经把该功能集成在了里面。[https://github.com/sunchi1d/MusicPro]()
 
 ### 网易云api
